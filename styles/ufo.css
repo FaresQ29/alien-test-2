@@ -1,0 +1,73 @@
+
+
+.ufo-style{
+    position: absolute;
+
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.ufo-taking-damage{
+    animation: ufoAnim 0.3s linear infinite;
+}
+
+@keyframes ufoAnim {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#ufo-img{
+    width: 200px;
+    
+}
+
+
+/* UFO healthbar */
+
+.ufo-health-bar{
+    position: absolute;
+    top: -15px;
+    left: 25%;
+    border-radius: 10px;
+    width: 100px;
+    height: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.ufo-health-bar div{
+    background-color: hsl(120, 100%, 50%);
+    width: 100%;
+    height: 100%;
+}
+
+/* UFO Laser */
+.ufo-laser-gun{
+    position: absolute;
+    background-color: white;
+    left: 48.5%;
+
+}
+.ufo-laser{
+    position: absolute;
+    top: -10px;
+
+    width: 5px; 
+    height: 100vh; 
+    background-color: red;
+    pointer-events: none;
+    background: rgba(204, 102, 255, 0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(204, 102, 255,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(204, 102, 255,1);
+    box-shadow: 0px 0px 15px 0px rgba(204, 102, 255,1);
+    transition: opacity 0.3s; 
+
+}
+
